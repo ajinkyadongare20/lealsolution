@@ -1,0 +1,23 @@
+.navbar-nav .dropdown-menu {
+    display: none;
+}
+
+.navbar-nav .dropdown:hover > .dropdown-menu {
+    display: block;
+    position: absolute;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav .dropdown-menu {
+        display: none;
+        position: static;
+        float: none;
+        width: 100%;
+        text-align: center;
+        background: #000; /* Adjust background color */
+    }
+
+    .navbar-nav .dropdown.open .dropdown-menu {
+        display: block;
+    }
+}
